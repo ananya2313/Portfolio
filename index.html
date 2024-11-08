@@ -1,0 +1,608 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ananya's Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: rgb(36, 10, 88);
+            color: white;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 60px;
+            background-color: rgb(0, 0, 48);
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+
+        }
+
+        nav ul li {
+            list-style: none;
+            margin: 0 23px;
+
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+
+        }
+
+        nav ul li a:hover {
+            color: black;
+            font-size: 1.1rem;
+
+        }
+
+        main hr {
+            border: 0;
+            background: #9c97f1;
+            height: 1.2px;
+            margin: 60px 84px;
+        }
+
+
+        .left {
+            font-size: 2rem;
+        }
+
+        .firstsection {
+            display: flex;
+            justify-content: space-around;
+            margin: 120px 0;
+            align-items: center;
+        }
+
+        .firstsection>div {
+            width: 40%;
+        }
+
+        .leftsection {
+            /* background-color: blueviolet; */
+            font-size: 3rem;
+            /* width: 50%; */
+            /* margin: 70px 0;<a> */
+        }
+
+        .rightsection img {
+            width: 80%;
+            /* margin: 50px 0; */
+        }
+
+        .name {
+            color: brown;
+        }
+
+        #element {
+            color: brown;
+        }
+
+        .secondsection {
+            max-width: 80vw;
+            margin: auto;
+            height: 80vh;
+        }
+
+        .secondsection h1 {
+            font-size: 2 rem;
+        }
+
+        .text-grey {
+            color: grey;
+            display: block;
+            width: 200px;
+
+        }
+
+        .secondsection .box {
+            background: white;
+            width: 75vw;
+            height: 2px;
+            margin: 56px 0;
+            display: flex;
+        }
+
+        .secondsection .vertical {
+            height: 93px;
+            width: 1px;
+            background: white;
+            margin: 0 85px;
+        }
+
+        .image-top {
+            width: 23px;
+            position: relative;
+            top: -32px;
+            left: -9px;
+
+        }
+
+        .vertical-title {
+            position: relative;
+            top: 75px;
+            width: 150px;
+            font-size: 20px;
+            font-weight: bold;
+
+        }
+
+        .vertical-desc {
+            position: relative;
+            top: 86px;
+            color: gray;
+            width: 150px;
+            font-size: 15px;
+        }
+
+        .footer {
+            background-color: black;
+            /* height: 200px; */
+        }
+
+        .footer {
+            display: flex;
+            padding: 23px 16px;
+            justify-content: space-evenly;
+
+        }
+
+        .footer ul {
+            list-style: none;
+
+        }
+
+        .footer>div {
+            width: 204px;
+
+        }
+
+        footer .rights {
+            text-align: center;
+            /* color: darkmagenta; */
+            color: #2E2E2E;
+            background-color: black;
+
+        }
+
+        .leftsection .btn {
+            padding: 10px;
+            background-color: #00FFFF;
+            border: 2px solid;
+            border-color: #A9A9A9;
+            border-radius: 5px;
+            font-size: 15px;
+            color: black;
+        }
+
+        .leftsection .btn:hover {
+            color: brown;
+            font-size: 18px;
+        }
+
+        .leftsection .buttons {
+            padding: 80px 0px;
+            
+        }
+
+        .thirdsection {
+            max-width: 80vw;
+            margin: auto;
+            height: 80vh;
+        }
+
+        .thirdsection h1 {
+            font-size: 2 rem;
+        }
+
+        /* .text-grey {
+            color: grey;
+        } */
+
+        .thirdsection .box {
+            background: white;
+            width: 75vw;
+            height: 2px;
+            margin: 56px 0;
+            display: flex;
+        }
+
+        .thirdsection .vertical {
+            height: 93px;
+            width: 1px;
+            background: white;
+            margin: 0 300px 0 100px;
+        }
+
+        .thirdsection .verticall {
+            height: 93px;
+            width: 1px;
+            background: white;
+            margin: 0 10px 0 500px;
+
+        }
+
+        .fourthsection {
+            max-width: 80vw;
+            margin: auto;
+            height: 80vh;
+        }
+
+        .fourthsection h1 {
+            font-size: 2 rem;
+        }
+
+        /* .text-grey {
+            color: grey;
+        } */
+
+        .fourthsection .box {
+            background: white;
+            width: 75vw;
+            height: 2px;
+            margin: 56px 0;
+            display: flex;
+        }
+
+        .fourthsection .vertical {
+            height: 93px;
+            width: 1px;
+            background: white;
+            margin: 0 100px;
+        }
+
+        .vertical-desc ul li {
+            list-style: none;
+        }
+
+        .vertical-desc img {
+
+            width: 25px;
+
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="left">Ananya's Portfolio</div>
+            <div class="right">
+                <ul>
+                    <li><a href="/">Home></a></li>
+                    <li><a href="/">About></a></li>
+                    <li><a href="/">Services></a></li>
+                    <li><a href="/">Projects></a></li>
+                    <li><a href="/">Contact Me></a></li>
+                    <!-- <li><a href="/"></a>Home</li> -->
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="firstsection">
+            <div class="leftsection">
+                Hey! My name is <span class="name"> Ananya.</span>
+                <div>I am a</div>
+                <span id="element"></span>
+                <div class=" buttons">
+                    <!-- <button class="btn"> Download Resume</button> -->
+                    <a href="https://instagram.com">
+                        <button class="btn">Download Resume</button>
+                    </a>
+                    <a href="https://github.com/ananya2313">
+                        <button class="btn">Github Profile</button>
+                    </a>
+                    <a href="https://www.linkedin.com/in/ananya-singh-653567272/">
+                        <button class="btn">LinkedIn Profile</button>
+                    </a>
+                </div>
+
+            </div>
+            <div class="rightsection">
+                <img src="imgg.png.png" alt="">
+            </div>
+
+        </section>
+        <hr>
+        <section class="secondsection">
+            <span class="text-grey">Here are some of my skills that i have learned.</span>
+            <h1>Skills</h1>
+            <div class="box">
+                <div class="vertical">
+                    <img class="image-top" src="v.png
+                    " alt="">
+                    <div class="vertical-title">
+                        Frontend
+                    </div>
+                    <div class="vertical-desc">
+                        <ul>
+                            <li><img src="html.png" alt="">
+                                HTML
+                            </li>
+                            <li><img src="css.png" alt="">
+                                CSS
+                            </li>
+                            <li><img src="js.png" alt="">
+                                JavaScript
+                            </li>
+                            <li><img src="boot.png" alt="">
+                                Bootstrap
+                            </li>
+
+
+                        </ul>
+                    </div>
+
+                </div>
+                <div class="vertical">
+                    <img class="image-top" src="v.png
+                    " alt="">
+                    <div class="vertical-title">
+                        Backend </div>
+                    <div class="vertical-desc">
+                        <ul>
+                            <li><img src="pngwing.com.png" alt="">
+                                Node Js
+                            </li>
+                            <li><img src="exp.png" alt="">
+                                Express Js
+                            </li>
+                            <li><img src="mongo.png" alt="">
+                                MongoDB
+                            </li>
+                        </ul>
+
+                    </div>
+
+                </div>
+                <div class="vertical">
+                    <img class="image-top" src="v.png
+                    " alt="">
+                    <div class="vertical-title">
+                        DevOps
+                    </div>
+                    <div class="vertical-desc">
+                        <ul>
+                            <li><img src="google.png" alt="">
+                                Google CLoud
+                            </li>
+
+                        </ul>
+                    </div>
+
+                </div>
+                <div class="vertical">
+                    <img class="image-top" src="v.png
+                    " alt="">
+                    <div class="vertical-title">
+                        Machine Learning
+                    </div>
+                    <div class="vertical-desc">
+                        <ul>
+                            <li><img src="py.png" alt="">
+                                Python
+                            </li>
+                            <li><img src="jupyter.png" alt="">
+                                Jupyter
+                            </li>
+                        </ul>
+
+                    </div>
+
+                </div>
+                <div class="vertical">
+                    <img class="image-top" src="v.png
+                    " alt="">
+                    <div class="vertical-title">
+                        Others
+                    </div>
+                    <div class="vertical-desc">
+                        <ul>
+                            <li><img src="git.png" alt="">
+                                Git
+                            </li>
+                            <li><img src="github.png" alt="">
+                                Github
+                            </li>
+                            <li><img src="vscode.jpeg" alt="">
+                                VS Code
+                            </li>
+                        </ul>
+                    </div>
+
+                </div>
+
+                <div class="vertical">
+                    <img class="image-top" src="v.png
+                    " alt="">
+                    <div class="vertical-title">
+                        Programming Languages
+                    </div>
+                    <div class="vertical-desc">
+                        <ul>
+                            <li><img src="java.png" alt="">
+                                Java
+                            </li>
+                            <li><img src="cpp.png" alt="">
+                                C++
+                            </li>
+                            <li><img src="py.png" alt="">
+                                Python
+                            </li>
+                            <li><img src="js.png" alt="">
+                                JavaScript
+                            </li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+
+
+        </section>
+
+
+
+        <section class="thirdsection">
+            <span class="text-grey">What I have done so far</span>
+            <h1>Work Experience</h1>
+            <div class="box">
+                <div class="vertical">
+                    <img class="image-top" src="v.png
+                    " alt="">
+                    <div class="vertical-title">
+                        Hackathons
+
+                    </div>
+                    <div class="vertical-desc">
+                        I have participated in several hackathons including SIH 2023.
+                    </div>
+
+                </div>
+                <div class="verticall">
+                    <img class="image-top" src="v.png
+                    " alt="">
+                    <div class="vertical-title">
+                        Frontend Developer Intern
+                    </div>
+                    <div class="vertical-desc">
+                        I did an internship in InternSavy where I developed three simple proojects.
+                    </div>
+
+                </div>
+            </div>
+
+
+        </section>
+
+
+
+
+
+        <section class="fourthsection">
+            <span class="text-grey">Here are few of my projects.</span>
+            <h1>Projects</h1>
+            <div class="box">
+                <div class="vertical">
+                    <img class="image-top" src="v.png
+                    " alt="">
+                    <div class="vertical-title">
+                        HTML Developer(2022-2023)
+                    </div>
+                    <div class="vertical-desc">
+                        I worked as a junior HTML Developer.
+                    </div>
+
+                </div>
+                <div class="vertical">
+                    <img class="image-top" src="v.png
+                    " alt="">
+                    <div class="vertical-title">
+                        Node.js Developer(2022-2023)
+                    </div>
+                    <div class="vertical-desc">
+                        I worked as a junior Node.js Developer.
+                    </div>
+
+                </div>
+                <div class="vertical">
+                    <img class="image-top" src="v.png
+                    " alt="">
+                    <div class="vertical-title">
+                        HTML Developer(2022-2023)
+                    </div>
+                    <div class="vertical-desc">
+                        I worked as a junior HTML Developer.
+                    </div>
+
+                </div>
+                <div class="vertical">
+                    <img class="image-top" src="v.png
+                    " alt="">
+                    <div class="vertical-title">
+                        HTML Developer(2022-2023)
+                    </div>
+                    <div class="vertical-desc">
+                        I worked as a junior HTML Developer.
+                    </div>
+
+                </div>
+                <div class="vertical">
+                    <img class="image-top" src="v.png
+                    " alt="">
+                    <div class="vertical-title">
+                        HTML Developer(2022-2023)
+                    </div>
+                    <div class="vertical-desc">
+                        I worked as a junior HTML Developer.
+                    </div>
+
+                </div>
+            </div>
+
+
+
+
+        </section>
+
+
+    </main>
+    <footer>
+        <div class="footer">
+            <div class="footer-1">
+                <h3>
+                    Ananya's Developer Portfolio
+                </h3>
+            </div>
+
+            <p>If you have any questions, feel free to <a href="mailto:ananyaoct022@gmail.com?subject=Subject&body=Dear%20Your%20Name,%0A%0A">send me an email</a>.</p>
+            <!-- <title>Email Form Example</title> -->
+            <!-- <script>
+                function sendEmail() {
+                    var name = document.getElementById("name").value;
+                    var subject = document.getElementById("subject").value;
+                    var email = "your-email@example.com";
+                    var body = "Dear " + name + ",%0A%0A";
+                    var mailto_link = "mailto:" + email + "?subject=" + encodeURIComponent(subject) + "&body=" + encodeURIComponent(body);
+                    window.location.href = mailto_link;
+                }
+            </script> -->
+        
+
+        </div>
+        <div class="rights">
+            &copy; ananyasportfolio.com | All rights reserved.
+        </div>
+
+    </footer>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['Web Developer', 'Backend Developer'],
+            typeSpeed: 50,
+        });
+    </script>
+
+
+</body>
+
+</html>
